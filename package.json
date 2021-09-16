@@ -1,0 +1,22 @@
+{
+  "name": "jsontocsv",
+  "version": "1.0.0",
+  "description": "json object to csv file convertion",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "author": "harsha",
+  "license": "ISC",
+  "dependencies": {
+    "@hapi/hapi": "^20.1.5",
+    "csv-writer": "^1.6.0",
+    "date-format": "^3.0.0",
+    "read-json-stream": "^1.1.0",
+    "readjson": "^2.2.2",
+    "write-csv": "^1.0.0",
+    "xlsx": "^0.17.2"
+  },
+  "devDependencies": {}
+}
