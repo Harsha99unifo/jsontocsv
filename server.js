@@ -30,7 +30,7 @@ const init = async () => {
                     
                    // manually adding the serialnumber(SNo) to the jobData 
                    jobData.map( (x,i) => x.SNO = i+1);
-
+                   jobData.map((x,i) => x.Remaks = ""); 
                    const setSheetDate = format('dd-MM-yyyy',new Date());
                    const newBook = xlsx.utils.book_new();
                    const newSheet = xlsx.utils.json_to_sheet(jobData,{header: ['SNO']});
