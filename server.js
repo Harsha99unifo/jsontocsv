@@ -33,7 +33,7 @@ const init = async () => {
                    jobData.map((x,i) => x.Remaks = ""); 
                    const setSheetDate = format('dd-MM-yyyy',new Date());
                    const newBook = xlsx.utils.book_new();
-                   const newSheet = xlsx.utils.json_to_sheet(jobData,{header: ['SNO']});
+                   const newSheet = xlsx.utils.json_to_sheet(jobData,{header: ['SNO','JOB NUMBER','CUSTOMER NAME','No of Pages','Email Pages','No of Line items','MAIL RCVD. TIME','MAIL REPLY TIME','TOTAL DURATION HH.MM.SS']});
                     
                    xlsx.utils.book_append_sheet(newBook,newSheet,setSheetDate);
 
